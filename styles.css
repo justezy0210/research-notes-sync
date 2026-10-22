@@ -1,0 +1,53 @@
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  color: #24352e;
+  background: #fbfaf6;
+  font-synthesis: none;
+  line-height: 1.85;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #286046; text-underline-offset: .22em; }
+a:hover { color: #163e2b; }
+a:focus-visible { outline: 3px solid #286046; outline-offset: 5px; border-radius: 2px; }
+.site-header, main, footer { width: min(880px, calc(100% - 48px)); margin-inline: auto; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 26px; border-bottom: 1px solid #d5ddd5; font-size: .92rem; }
+.wordmark { font-size: 1rem; font-weight: 750; text-decoration: none; letter-spacing: -.02em; }
+.intro { padding: 72px 0 44px; }
+.eyebrow { color: #526c5d; font-size: .73rem; letter-spacing: .16em; font-weight: 700; }
+h1 { font-size: clamp(2rem, 5.6vw, 3.3rem); line-height: 1.3; letter-spacing: -.045em; margin: 20px 0 26px; }
+h2 { font-size: 1.22rem; line-height: 1.5; margin: 0 0 14px; letter-spacing: -.025em; }
+p { margin: 0 0 16px; }
+p:last-child { margin-bottom: 0; }
+.lead { max-width: 710px; font-size: 1.1rem; color: #43584c; }
+.flow { display: flex; flex-wrap: wrap; align-items: center; gap: 13px; margin-top: 32px; padding: 17px 22px; background: #edf2eb; border-left: 3px solid #548264; font-size: .95rem; }
+section { display: grid; grid-template-columns: 44px 1fr; gap: 16px; padding: 34px 0; border-top: 1px solid #d5ddd5; }
+.section-number { color: #526c5d; font-size: .83rem; font-variant-numeric: tabular-nums; padding-top: 4px; }
+.text-link { display: inline-block; margin-top: 4px; font-weight: 600; }
+.muted { color: #596a60; font-size: .9rem; }
+.policy { max-width: 760px; }
+.policy h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); }
+.policy section { display: block; }
+.policy .intro { padding-bottom: 36px; }
+.policy .lead { margin-bottom: 18px; }
+code { font-size: .88em; word-break: break-all; }
+footer { display: flex; flex-wrap: wrap; gap: 10px 24px; border-top: 1px solid #d5ddd5; padding: 26px 0 40px; margin-top: 24px; font-size: .8rem; color: #596a60; }
+.skip { position: absolute; top: -100px; left: 24px; padding: 8px 12px; background: #fff; }
+.skip:focus { top: 8px; }
+@media (max-width: 540px) {
+  .site-header, main, footer { width: calc(100% - 36px); }
+  .site-header { align-items: flex-start; gap: 12px; flex-direction: column; padding-block: 18px; }
+  .intro { padding-top: 44px; }
+  section { grid-template-columns: 26px 1fr; gap: 10px; padding-block: 28px; }
+  .flow { gap: 8px; padding: 14px; font-size: .85rem; }
+}
+@media print {
+  :root { background: #fff; color: #000; }
+  .site-header, main, footer { width: 100%; }
+  .intro { padding-top: 24px; }
+  a { color: inherit; }
+  .skip { display: none; }
+}

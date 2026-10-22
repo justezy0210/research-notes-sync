@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ResearchNotes Sync의 Google Drive 데이터 접근, 이용, 보관, 공유 및 삭제에 관한 개인정보처리방침입니다.">
+  <title>개인정보처리방침 · ResearchNotes Sync</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <header class="site-header">
+    <a class="wordmark" href="./">ResearchNotes Sync</a>
+    <nav aria-label="주 메뉴"><a href="privacy.html" aria-current="page">개인정보처리방침</a></nav>
+  </header>
+  <main id="main" class="policy">
+    <div class="intro">
+      <p class="eyebrow">PRIVACY POLICY</p>
+      <h1>개인정보처리방침</h1>
+      <p class="lead">ResearchNotes Sync는 운영자 본인의 연구노트 동기화에 Google Drive 데이터를 사용합니다.</p>
+      <p class="muted">시행 및 최종 수정: 2026년 10월 22일 · 운영자: <a href="https://github.com/justezy0210">justezy0210</a></p>
+    </div>
+    <section aria-labelledby="scope"><div>
+      <h2 id="scope">1. 적용 범위</h2>
+      <p>이 방침은 ResearchNotes Sync라는 이름으로 등록한 개인용 Google OAuth 앱, 이 앱으로 인증한 rclone 동기화 구성 및 이 공개 안내 사이트에 적용됩니다. 일반 사용자의 회원가입이나 연구자료 업로드를 받지 않습니다.</p>
+    </div></section>
+    <section aria-labelledby="data"><div>
+      <h2 id="data">2. 접근하는 데이터와 권한</h2>
+      <p>동기화 대상은 지정한 보관소의 Markdown 노트, 그림, PDF 및 작은 표 파일입니다. 파일 내용과 함께 파일·폴더 이름, 식별자, 경로, 크기, 수정 시각, 체크섬 등 동기화에 필요한 메타데이터를 처리합니다.</p>
+      <p>이미 다른 기기에서 만든 파일을 다루기 위해 Google Drive의 전체 파일 접근 권한인 <code>https://www.googleapis.com/auth/drive</code>를 요청합니다. 이 권한은 파일의 조회·생성·다운로드·수정·삭제를 허용하며, OAuth 권한 자체가 보관소 폴더에만 제한되는 것은 아닙니다. 실제 명령은 설정에서 지정한 연구노트와 백업 폴더를 대상으로 실행합니다.</p>
+      <p>Google이 발급하는 액세스 토큰과 갱신 토큰을 인증 유지에 사용합니다. Google 비밀번호는 수집하거나 저장하지 않습니다.</p>
+    </div></section>
+    <section aria-labelledby="use"><div>
+      <h2 id="use">3. 이용 목적</h2>
+      <p>데이터는 서버와 Google Drive 사이의 파일 동기화, 변경 감지, 충돌 확인 및 복구용 백업에 사용합니다. Mac의 Google Drive 데스크톱 앱은 해당 파일을 Mac에 연결하고 Obsidian은 로컬 노트를 편집합니다. 동기화 실행 시 생성·수정·삭제가 반대편에 반영될 수 있습니다.</p>
+      <p>이 동기화 구성은 Google에서 받은 데이터를 광고, 판매, 사용자 프로파일링 또는 AI 모델 학습에 사용하지 않습니다. 운영자가 다른 도구로 노트를 별도 처리하는 행위에는 해당 도구의 설정과 정책이 적용됩니다.</p>
+    </div></section>
+    <section aria-labelledby="storage"><div>
+      <h2 id="storage">4. 저장 및 보호</h2>
+      <p>노트와 첨부파일은 운영자의 Google Drive, Linux 서버 및 연결된 Mac에 저장됩니다. 복구용 사본은 서버와 Drive의 별도 백업 위치에 보관할 수 있습니다. 동기화 상태와 작업 로그에는 파일 경로, 크기, 시각, 체크섬 및 오류 정보가 포함될 수 있습니다.</p>
+      <p>인증 설정과 토큰은 서버에서 운영자 계정만 읽을 수 있도록 파일 접근 권한을 제한합니다. 이 공개 사이트나 공개 GitHub 저장소에는 인증 정보와 연구노트 내용을 저장하지 않습니다. Google API와의 통신에는 HTTPS를 사용합니다.</p>
+    </div></section>
+    <section aria-labelledby="sharing"><div>
+      <h2 id="sharing">5. 공유 및 외부 서비스</h2>
+      <p>Google Drive는 파일 저장과 전송을 처리합니다. 이 동기화 구성은 노트를 공개 링크로 게시하거나 제3자에게 판매하지 않습니다. Drive에서 운영자가 직접 설정한 기존 공유 권한은 그대로 적용됩니다.</p>
+      <p>Google API에서 받은 정보의 이용 및 다른 앱으로의 전송에는 제한적 사용 요건을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 따릅니다.</p>
+      <p>이 안내 사이트는 GitHub Pages가 호스팅합니다. 페이지 코드에는 광고, 방문 분석 도구, 쿠키 또는 Google 로그인 기능을 넣지 않습니다. GitHub는 호스팅 보안을 위해 방문자의 IP 주소 등 접속 정보를 처리할 수 있습니다. 자세한 내용은 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>을 확인하세요.</p>
+    </div></section>
+    <section aria-labelledby="deletion"><div>
+      <h2 id="deletion">6. 보관 기간과 삭제</h2>
+      <p>노트, 백업 및 작업 로그는 운영자가 보관 필요에 따라 삭제할 때까지 유지됩니다. 고정 기간이 지난 자료를 자동으로 모두 삭제한다고 보장하지 않습니다. 원본을 지워도 별도 백업이나 Drive 휴지통에는 사본이 남을 수 있습니다.</p>
+      <p>사용을 중단하려면 동기화 실행을 중지하고 <a href="https://myaccount.google.com/connections">Google 계정의 연결된 앱 관리</a>에서 ResearchNotes Sync의 접근 권한을 해제합니다. 이후 서버의 토큰·인증 설정과 필요하지 않은 노트, 백업, 로그, Mac 사본 및 Drive 휴지통을 각각 삭제할 수 있습니다. 권한 해제만으로 이미 저장된 사본이 지워지지는 않습니다.</p>
+    </div></section>
+    <section aria-labelledby="updates"><div>
+      <h2 id="updates">7. 변경 및 문의</h2>
+      <p>처리 목적이나 데이터 범위가 바뀌면 이 페이지의 내용과 수정일을 갱신합니다. 추가 동의가 필요한 변경은 새로운 용도로 데이터를 사용하기 전에 반영합니다.</p>
+      <p>운영자 <a href="https://github.com/justezy0210">justezy0210</a>에게 <a href="https://github.com/justezy0210/research-notes-sync/issues">GitHub Issues</a>로 문의할 수 있습니다. 공개 문의에는 개인정보, 연구노트 내용, 인증 토큰을 적지 마세요.</p>
+    </div></section>
+  </main>
+  <footer><a href="./">ResearchNotes Sync 홈</a><span>최종 수정 2026-10-22</span></footer>
+</body>
+</html>
